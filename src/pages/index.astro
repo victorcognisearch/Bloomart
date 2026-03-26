@@ -1,0 +1,308 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTAButton from '../components/CTAButton.astro';
+import CourseCardOverlay from '../components/CourseCardOverlay.astro';
+---
+
+<Layout title="Cursuri de Dans București">
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-screen flex items-end pb-20 lg:pb-28 overflow-hidden bg-dark">
+    <img
+      src="/images/homepage/hero-group.webp"
+      alt="Cursuri de dans BloomArt Academy"
+      class="absolute inset-0 w-full h-full object-cover opacity-40"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/30"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand-light"></span>
+        <span class="text-brand-light text-sm font-semibold uppercase tracking-[0.2em]">BloomArt Academy</span>
+      </div>
+      <h1 class="text-[clamp(3rem,8vw,7rem)] font-display font-bold text-white leading-[0.95] max-w-4xl">
+        Cursuri de dans București
+      </h1>
+      <p class="mt-8 text-lg lg:text-xl text-white/60 max-w-xl leading-relaxed">
+        Dansul este pentru noi toți, indiferent de cât de bine știi să te miști sau de ce vârstă ai.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <CTAButton href="/formular-inscriere/" label="Înscrie-te" variant="primary" size="lg" />
+        <CTAButton href="/orar-tarife/" label="Orar & Tarife" variant="outline" size="lg" />
+      </div>
+
+      <!-- Stats row -->
+      <div class="mt-20 pt-8 border-t border-white/10 grid grid-cols-3 gap-8 max-w-2xl">
+        <div>
+          <span class="text-3xl lg:text-4xl font-display font-bold text-white">10+</span>
+          <p class="mt-1 text-sm text-white/40 uppercase tracking-wider">Ani experiență</p>
+        </div>
+        <div>
+          <span class="text-3xl lg:text-4xl font-display font-bold text-white">6</span>
+          <p class="mt-1 text-sm text-white/40 uppercase tracking-wider">Stiluri de dans</p>
+        </div>
+        <div>
+          <span class="text-3xl lg:text-4xl font-display font-bold text-white">500+</span>
+          <p class="mt-1 text-sm text-white/40 uppercase tracking-wider">Cursanți</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED COURSES — large editorial cards ========== -->
+  <section class="bg-dark py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Cursuri</span>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight max-w-2xl">
+          Alege cursul potrivit pentru tine
+        </h2>
+        <p class="text-white/40 max-w-md leading-relaxed">
+          Fie că ești mic sau mare, ai experiență în dans sau simți că ai două picioare stângi, vei găsi la BloomArt o grupă perfectă.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <CourseCardOverlay title="Street Dance Adulți" href="/cursuri-dans-adulti/street-dance/" image="/images/homepage/virgil-stage.webp" />
+        <CourseCardOverlay title="Dans Modern Copii" href="/cursuri-dans-copii/dans-modern/" />
+        <CourseCardOverlay title="Dans de Societate" href="/cursuri-dans-adulti/dans-societate/" image="/images/homepage/couples-dancing.webp" />
+        <CourseCardOverlay title="Street Dance Copii" href="/cursuri-dans-copii/street-dance/" />
+        <CourseCardOverlay title="Dansul Mirilor" href="/cursuri-dansul-mirilor/" image="/images/homepage/couple-practice.webp" />
+        <CourseCardOverlay title="Baby Dance" href="/cursuri-dans-copii/baby-dance/" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT — editorial split ========== -->
+  <section class="bg-[#0a0a0f] py-24 lg:py-32 overflow-hidden" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- Image side -->
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img
+              src="/images/homepage/virgil-dance.webp"
+              alt="Dans BloomArt"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <!-- Floating accent image -->
+          <div class="hidden lg:block absolute -right-8 -bottom-8 w-48 h-64 rounded-xl overflow-hidden border-4 border-[#0a0a0f] shadow-2xl">
+            <img
+              src="/images/homepage/group-practice.webp"
+              alt="Grup de dans"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- Text side -->
+        <div class="lg:col-span-6 lg:col-start-7">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-px bg-brand"></span>
+            <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Despre Noi</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-display font-bold text-white leading-tight mb-8">
+            Mai mult decât o școală de dans
+          </h2>
+          <div class="space-y-5 text-white/50 leading-relaxed text-lg">
+            <p>
+              De peste 10 ani predăm cu drag și voie bună cursuri de dans în București, pe care le adaptăm nevoilor și nivelului tău.
+            </p>
+            <p>
+              În portofoliul nostru găsești cursuri de dans modern și street dance pentru copii, cursuri de dans sportiv pentru copii, adulți și de performanță, cursuri de dans de societate pentru adulți, precum și pachete de lecții pentru dansul mirilor.
+            </p>
+            <p>
+              Vrem ca BloomArt Academy să fie un spațiu sigur și prietenos, în care fiecare dintre noi, mic sau mare, talentat sau cu două picioare stângi, să se simtă binevenit.
+            </p>
+          </div>
+          <div class="mt-10">
+            <a href="/despre-bloomart/" class="group inline-flex items-center gap-3 text-white font-semibold uppercase tracking-wider text-sm hover:text-brand transition-colors duration-300">
+              <span>Află mai multe</span>
+              <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROMOTIONS — horizontal marquee style ========== -->
+  <section class="bg-brand py-5 overflow-hidden">
+    <div class="flex items-center gap-12 animate-marquee whitespace-nowrap">
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Prima ședință gratuită</span>
+      <span class="text-white/40">&#9670;</span>
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Discount până la 100% pe 3 luni</span>
+      <span class="text-white/40">&#9670;</span>
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Abonamente de la 4 ședințe/lună</span>
+      <span class="text-white/40">&#9670;</span>
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Prima ședință gratuită</span>
+      <span class="text-white/40">&#9670;</span>
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Discount până la 100% pe 3 luni</span>
+      <span class="text-white/40">&#9670;</span>
+      <span class="text-white/90 font-display text-lg uppercase tracking-wider">Abonamente de la 4 ședințe/lună</span>
+      <span class="text-white/40">&#9670;</span>
+    </div>
+  </section>
+
+  <!-- ========== BENEFITS — numbered list ========== -->
+  <section class="bg-dark py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">De ce BloomArt</span>
+      </div>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-20 max-w-3xl">
+        De ce să vii la cursurile de dans?
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-x-16 gap-y-16">
+        <!-- Item 1 -->
+        <div class="group flex gap-6">
+          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">01</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Abonamente flexibile</h3>
+            <p class="text-white/40 leading-relaxed">
+              Poți să iei de 4 sau de 8 lecții de dans pe lună, în funcție de programul și bugetul tău.
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="group flex gap-6">
+          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">02</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Program seara și în weekend</h3>
+            <p class="text-white/40 leading-relaxed">
+              Programul lecțiilor de dans e perfect adaptat celor care muncesc la birou și elevilor, astfel încât poți veni imediat după muncă sau școală.
+            </p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="group flex gap-6">
+          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">03</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Cursuri pentru orice nivel</h3>
+            <p class="text-white/40 leading-relaxed">
+              Fie că ești zeul ringului de dans sau preferi să te ascunzi într-un colț, vei găsi o grupă de dans potrivită nivelului tău.
+            </p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="group flex gap-6">
+          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">04</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Locație centrală</h3>
+            <p class="text-white/40 leading-relaxed">
+              Școala de dans BloomArt se află în centrul Bucureștiului, pentru ca tu sau piciul tău să puteți ajunge ușor la lecția de dans de oriunde vă aflați.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSTRUCTORS — editorial showcase ========== -->
+  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-12 h-px bg-brand"></span>
+            <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Echipa</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight max-w-xl">
+            Antrenorii BloomArt
+          </h2>
+        </div>
+        <a href="/despre-bloomart/" class="group inline-flex items-center gap-3 text-white/60 font-semibold uppercase tracking-wider text-sm hover:text-brand transition-colors duration-300">
+          <span>Despre echipă</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="group relative aspect-[3/4] rounded-xl overflow-hidden">
+          <img src="/images/homepage/virgil-portrait.webp" alt="Instructor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4">
+            <p class="font-display font-bold text-white text-lg">Virgil</p>
+            <p class="text-white/50 text-sm">Street Dance</p>
+          </div>
+        </div>
+        <div class="group relative aspect-[3/4] rounded-xl overflow-hidden">
+          <img src="/images/homepage/irina-portrait.webp" alt="Instructor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4">
+            <p class="font-display font-bold text-white text-lg">Irina</p>
+            <p class="text-white/50 text-sm">Dans Modern</p>
+          </div>
+        </div>
+        <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-dark-light">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-5xl font-display font-bold text-white/5">3</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4">
+            <p class="font-display font-bold text-white/30 text-lg">Coming soon</p>
+          </div>
+        </div>
+        <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-dark-light">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-5xl font-display font-bold text-white/5">4</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4">
+            <p class="font-display font-bold text-white/30 text-lg">Coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="relative py-32 lg:py-40 overflow-hidden" data-reveal>
+    <img
+      src="/images/homepage/couples-dancing.webp"
+      alt="Dans BloomArt"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-6 block">Începe acum</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[0.95] mb-8">
+        Începe aventura ta în dans
+      </h2>
+      <p class="text-xl text-white/40 mb-12 max-w-xl mx-auto">
+        Prima ședință este gratuită. Alătură-te comunității BloomArt.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <CTAButton href="/formular-inscriere/" label="Înscrie-te Acum" variant="primary" size="lg" />
+        <CTAButton href="/contact/" label="Contactează-ne" variant="outline" size="lg" />
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // Scroll-reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed', 'animate-fade-up');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => obs.observe(el));
+</script>

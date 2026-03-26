@@ -1,0 +1,70 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-dark text-text-on-dark">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Brand -->
+      <div>
+        <span class="text-2xl font-display font-bold tracking-wider">BLOOM<span class="text-brand">ART</span></span>
+        <p class="mt-4 text-sm text-text-on-dark/70 leading-relaxed">
+          Cursuri de dans pentru copii și adulți în București. Descoperă bucuria dansului alături de noi.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sm font-display font-semibold uppercase tracking-wider mb-4 text-brand">Cursuri</h3>
+        <ul class="space-y-2">
+          <li><a href="/cursuri-dans-adulti/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Dans Adulți</a></li>
+          <li><a href="/cursuri-dans-copii/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Dans Copii</a></li>
+          <li><a href="/cursuri-dansul-mirilor/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Dansul Mirilor</a></li>
+          <li><a href="/orar-tarife/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Orar & Tarife</a></li>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <h3 class="text-sm font-display font-semibold uppercase tracking-wider mb-4 text-brand">Informații</h3>
+        <ul class="space-y-2">
+          <li><a href="/despre-bloomart/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Despre Noi</a></li>
+          <li><a href="/galerie/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Galerie</a></li>
+          <li><a href="/blog/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Blog</a></li>
+          <li><a href="/intrebari-frecvente/" class="text-sm text-text-on-dark/70 hover:text-brand transition-colors">Întrebări Frecvente</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-sm font-display font-semibold uppercase tracking-wider mb-4 text-brand">Contact</h3>
+        <ul class="space-y-3 text-sm text-text-on-dark/70">
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 mt-0.5 shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>Tabacarilor 14, București</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 shrink-0 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:contact@bloomart.ro" class="hover:text-brand transition-colors">contact@bloomart.ro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-text-on-dark/50">
+        &copy; {currentYear} Bloomart Academy. Toate drepturile rezervate.
+      </p>
+      <div class="flex items-center gap-4 text-xs text-text-on-dark/50">
+        <a href="/termeni-si-conditii/" class="hover:text-brand transition-colors">Termeni și Condiții</a>
+        <a href="/cookie-policy/" class="hover:text-brand transition-colors">Politica Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
