@@ -6,6 +6,7 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://bloomart.vercel.app',
+  output: 'server',
   adapter: vercel(),
   vite: {
     plugins: [tailwindcss()],

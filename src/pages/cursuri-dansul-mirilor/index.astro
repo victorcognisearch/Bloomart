@@ -1,0 +1,527 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+---
+
+<Layout
+  title="Dansul Mirilor București"
+  description="Cursuri dansul mirilor București — coregrafie personalizată, lecții private pentru cupluri. Vals, tango sau orice stil doriți. BloomArt Academy."
+>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-[60vh] lg:min-h-[70vh] flex items-end pb-20 lg:pb-28 overflow-hidden bg-dark">
+    <img
+      src="/images/homepage/dansul-mirilor-nunta.webp"
+      alt="Cuplu dansând la nuntă"
+      class="absolute inset-0 w-full h-full object-cover opacity-30"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/40"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand-light"></span>
+        <span class="text-brand-light text-sm font-semibold uppercase tracking-[0.2em]">Dansul Mirilor</span>
+      </div>
+      <h1 class="text-[clamp(2.5rem,6vw,5.5rem)] font-display font-bold text-white leading-[0.95] max-w-4xl">
+        Dansul vostru,<br />povestea voastră
+      </h1>
+      <p class="mt-8 text-lg lg:text-xl text-white/60 max-w-xl leading-relaxed">
+        Transformăm primul dans într-un moment de neuitat. Coregrafie personalizată, pe melodia voastră, adaptată nivelului vostru.
+      </p>
+      <div class="mt-10">
+        <CTAButton href="/contact/" label="Programează o consultație" variant="primary" size="lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDITORIAL SPLIT — De ce BloomArt ========== -->
+  <section class="bg-[#0a0a0f] py-24 lg:py-32 overflow-hidden" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- Image side -->
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img
+              src="/images/homepage/dansul-mirilor-nunta.webp"
+              alt="Lecție dansul mirilor la BloomArt"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- Text side -->
+        <div class="lg:col-span-6 lg:col-start-7">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-px bg-brand"></span>
+            <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">De Ce BloomArt</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-display font-bold text-white leading-tight mb-8">
+            Coregrafie creată special pentru voi
+          </h2>
+          <div class="space-y-5 text-white/50 leading-relaxed text-lg">
+            <p>
+              Indiferent de nivelul vostru de dans — chiar dacă simțiți că aveți „două picioare stângi" — antrenorii noștri vă ghidează pas cu pas spre un dans care vă reflectă personalitatea și povestea de iubire.
+            </p>
+            <p>
+              Alegeți orice stil doriți: valsul clasic, un tango plin de pasiune sau un mix modern și distractiv. Coregrafia este construită pe melodia voastră, adaptată stilului vostru, și gândită să impresioneze invitații.
+            </p>
+            <p>
+              Din experiența noastră, majoritatea cuplurilor învață o coregrafie de dificultate medie în doar 5–10 ședințe. Cu antrenori acreditați de Federația Română de Dans Sportiv, sunteți pe mâini bune.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS — Numbered Steps ========== -->
+  <section class="bg-dark py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Cum Funcționează</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+        De la prima întâlnire la dansul perfect
+      </h2>
+      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+        Un proces simplu, creat să vă facă pregătirea plăcută și fără stres.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-x-16 gap-y-16">
+        <div class="group flex gap-6">
+          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">01</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white mb-2">Consultație gratuită</h3>
+            <p class="text-white/40 leading-relaxed">
+              Într-o discuție de 30 de minute (telefonic sau la studio), stabilim împreună stilul de dans, melodia și numărul de ședințe de care aveți nevoie.
+            </p>
+          </div>
+        </div>
+        <div class="group flex gap-6">
+          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">02</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white mb-2">Lecții personalizate</h3>
+            <p class="text-white/40 leading-relaxed">
+              Ședințe private de 45 de minute, doar voi doi cu antrenorul. Ritmul și dificultatea sunt adaptate complet la nivelul vostru.
+            </p>
+          </div>
+        </div>
+        <div class="group flex gap-6">
+          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">03</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white mb-2">Repetiție la locație</h3>
+            <p class="text-white/40 leading-relaxed">
+              La ultima ședință, antrenorul vine la locația nunții voastre pentru a vă asigura că totul funcționează perfect pe ringul de dans real.
+            </p>
+          </div>
+        </div>
+        <div class="group flex gap-6">
+          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">04</span>
+          <div>
+            <h3 class="text-xl font-display font-bold text-white mb-2">Dansul perfect</h3>
+            <p class="text-white/40 leading-relaxed">
+              Dansați cu încredere și bucurie în fața invitaților. Un moment pe care îl veți revedea mereu cu drag.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PACKAGES — Pricing Cards ========== -->
+  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Pachete</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+        Alege pachetul potrivit
+      </h2>
+      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+        Toate pachetele includ consultația inițială gratuită, coregrafie personalizată și repetiția la locația nunții.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
+        <!-- 5 sessions -->
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8 flex flex-col hover:border-white/20 transition-all duration-300">
+          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Esențial</p>
+          <div class="mb-2">
+            <span class="text-5xl font-display font-bold text-white">1200</span>
+            <span class="text-white/40 text-lg ml-1">RON</span>
+          </div>
+          <p class="text-white/30 text-sm mb-6">240 RON / ședință</p>
+          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              5 ședințe private (45 min)
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Perioadă: 5 săptămâni
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Coregrafie personalizată
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Consultație gratuită
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <CTAButton href="/contact/" label="Alege pachetul" variant="outline" size="md" />
+          </div>
+        </div>
+
+        <!-- 7 sessions — recommended -->
+        <div class="relative bg-dark-light/50 border-2 border-brand rounded-2xl p-8 flex flex-col shadow-[0_0_40px_rgba(62,179,145,0.1)]">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand text-dark text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">Recomandat</span>
+          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Confort</p>
+          <div class="mb-2">
+            <span class="text-5xl font-display font-bold text-white">1700</span>
+            <span class="text-white/40 text-lg ml-1">RON</span>
+          </div>
+          <p class="text-white/30 text-sm mb-6">243 RON / ședință</p>
+          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              7 ședințe private (45 min)
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Perioadă: 6 săptămâni
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Coregrafie personalizată
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Consultație gratuită
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Repetiție la locația nunții
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <CTAButton href="/contact/" label="Alege pachetul" variant="primary" size="md" />
+          </div>
+        </div>
+
+        <!-- 10 sessions -->
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8 flex flex-col hover:border-white/20 transition-all duration-300">
+          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Premium</p>
+          <div class="mb-2">
+            <span class="text-5xl font-display font-bold text-white">2400</span>
+            <span class="text-white/40 text-lg ml-1">RON</span>
+          </div>
+          <p class="text-white/30 text-sm mb-6">240 RON / ședință</p>
+          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              10 ședințe private (45 min)
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Perioadă: 7 săptămâni
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Coregrafie complexă
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Consultație gratuită
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Repetiție la locația nunții
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <CTAButton href="/contact/" label="Alege pachetul" variant="outline" size="md" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center space-y-2">
+        <p class="text-white/30 text-sm">
+          Ședință individuală disponibilă și separat — 250 RON / 45 min.
+        </p>
+        <p class="text-white/30 text-sm">
+          Ai nevoie de mai multe ședințe? <a href="/contact/" class="text-brand hover:text-brand-light transition-colors underline underline-offset-2">Contactează-ne</a> pentru un program personalizat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ACCORDION ========== -->
+  <section class="bg-dark py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Întrebări Frecvente</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-16">
+        Tot ce trebuie să știți
+      </h2>
+
+      <div class="max-w-3xl space-y-4">
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Când ar trebui să începem lecțiile?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Vă recomandăm să începeți lecțiile cu cel puțin 2 luni înainte de nuntă. Astfel aveți suficient timp să învățați coregrafia, să o exersați acasă și să vă simțiți confortabil pe ringul de dans.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Câte ședințe avem nevoie?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Depinde de complexitatea coregrafiei dorite și de experiența voastră anterioară. Majoritatea cuplurilor învață o coregrafie de dificultate medie în 5–10 ședințe. La consultația inițială stabilim împreună numărul optim de ședințe.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Nu am dansat niciodată. E ok?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Absolut! Majoritatea cuplurilor care vin la noi nu au experiență anterioară de dans. Coregrafia este adaptată nivelului vostru și construită să vă pună în valoare calitățile naturale. Antrenorii noștri au experiența necesară pentru a vă ghida de la zero la un dans de care să fiți mândri.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Ce stil de dans putem alege?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Orice stil doriți! Cele mai populare alegeri sunt valsul clasic, tango-ul și mixurile moderne. Puteți alege un singur stil sau o combinație — coregrafia este complet personalizată pe gusturile și personalitatea voastră.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Cât durează o ședință?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Fiecare ședință durează 45 de minute — suficient pentru a învăța pași noi și a repeta coregrafia, fără a fi obositor. Programul este flexibil și stabilit de comun acord cu antrenorul.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-display font-semibold text-lg pr-4">Putem alege orice melodie?</span>
+            <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5">
+            <p class="text-white/40 leading-relaxed">
+              Da! Coregrafia este creată special pe melodia voastră. Dacă nu v-ați decis încă, antrenorul vă poate ajuta cu sugestii care se potrivesc stilului de dans dorit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS ========== -->
+  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Antrenorii Voștri</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+        Pe mâini bune
+      </h2>
+      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+        Alina și Cătălin, fondatorii BloomArt Academy, vă ghidează personal prin fiecare pas al coregrafiei.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl">
+        <!-- Alina -->
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img
+              src="/images/team/alina-otelea.webp"
+              alt="Alina Otelea — Co-fondator BloomArt Academy"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6 lg:p-8">
+            <h3 class="text-xl font-display font-bold text-white mb-1">Alina Otelea</h3>
+            <p class="text-brand text-sm font-semibold uppercase tracking-wider mb-4">Co-fondator & Antrenor</p>
+            <p class="text-white/40 leading-relaxed text-sm">
+              Dansul a fost a doua ei casă încă din copilărie, cu o carieră de performanță în dans sportiv. Astăzi îmbină experiența competițională cu pasiunea de a ajuta cuplurile să strălucească pe ringul de dans.
+            </p>
+          </div>
+        </div>
+
+        <!-- Catalin -->
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img
+              src="/images/team/catalin-otelea.webp"
+              alt="Cătălin Otelea — Co-fondator BloomArt Academy"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6 lg:p-8">
+            <h3 class="text-xl font-display font-bold text-white mb-1">Cătălin Otelea</h3>
+            <p class="text-brand text-sm font-semibold uppercase tracking-wider mb-4">Co-fondator & Antrenor</p>
+            <p class="text-white/40 leading-relaxed text-sm">
+              Cu o energie debordantă și expertiză în salsa și dans sportiv competițional, Cătălin ajută cuplurile să descopere bucuria și încrederea în dans. Menționat cu drag în recenziile cursanților.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="bg-dark py-24 lg:py-32" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-px bg-brand"></span>
+        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Testimoniale</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-16">
+        Ce spun cuplurile despre noi
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8">
+          <div class="flex gap-1 mb-6">
+            {[...Array(5)].map(() => (
+              <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <p class="text-white/50 leading-relaxed mb-6">
+            Recomand din suflet BloomArt Academy și mai ales pe Cătălin. El ne-a ajutat pentru dansul mirilor și am învățat foarte multe într-un timp atât de scurt. Ne-a făcut sa ne placa sa dansam și sa avem încredere ca o facem și bine. Mulțumim!!
+          </p>
+          <div>
+            <p class="text-white font-display font-semibold">Elena Daniela</p>
+            <p class="text-white/30 text-sm">Cursant — dansul mirilor</p>
+          </div>
+        </div>
+
+        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8">
+          <div class="flex gap-1 mb-6">
+            {[...Array(5)].map(() => (
+              <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <p class="text-white/50 leading-relaxed mb-6">
+            Am avut privilegiul să pregătim coregrafia pt dansul mirilor la nunta noastră de argint sub îndrumarea celor mai răbdători, înțelegători și funny antrenori, a fost o experiența mi-nu-na-ta! Mulțumim dragilor, cu siguranță vom reveni.
+          </p>
+          <div>
+            <p class="text-white font-display font-semibold">Corina Dragne</p>
+            <p class="text-white/30 text-sm">Cursant — dansul mirilor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="relative py-32 lg:py-40 overflow-hidden" data-reveal>
+    <img
+      src="/images/homepage/dansul-mirilor-nunta.webp"
+      alt="Dans BloomArt"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-6 block">Primul Pas</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[0.95] mb-8">
+        Primul pas spre dansul perfect
+      </h2>
+      <p class="text-xl text-white/40 mb-12 max-w-xl mx-auto">
+        Consultația inițială e gratuită. Hai să povestim despre dansul vostru.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <CTAButton href="/contact/" label="Programează Consultația" variant="primary" size="lg" />
+        <CTAButton href="https://wa.me/40746423423" label="WhatsApp" variant="secondary" size="lg" />
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion
+  document.querySelectorAll('.faq-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const content = item?.querySelector('.faq-content');
+      const icon = item?.querySelector('.faq-icon');
+      const isOpen = !content?.classList.contains('hidden');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.querySelector('.faq-content')?.classList.add('hidden');
+        faq.querySelector('.faq-icon')?.classList.remove('rotate-180');
+        faq.querySelector('.faq-trigger')?.classList.remove('text-brand');
+      });
+
+      // Toggle current
+      if (!isOpen) {
+        content?.classList.remove('hidden');
+        icon?.classList.add('rotate-180');
+        btn.classList.add('text-brand');
+      }
+    });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed', 'animate-fade-up');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => obs.observe(el));
+</script>
