@@ -1,27 +1,48 @@
 ---
 const navItems = [
-  { label: 'Acasă', href: '/' },
   {
-    label: 'Cursuri',
+    label: 'Dans Copii',
+    href: '/cursuri-dans-copii/',
     children: [
-      { label: 'Dans Adulți', href: '/cursuri-dans-adulti/' },
-      { label: 'Dans Copii', href: '/cursuri-dans-copii/' },
+      { label: 'Baby Dance (3–5 ani)', href: '/cursuri-dans-copii/baby-dance/' },
+      { label: 'Dans Modern', href: '/cursuri-dans-copii/dans-modern/' },
+      { label: 'Street Dance', href: '/cursuri-dans-copii/street-dance/' },
     ],
   },
-  { label: 'Orar & Tarife', href: '/orar-tarife/' },
-  { label: 'Galerie', href: '/galerie/' },
+  {
+    label: 'Dans Adulți',
+    href: '/cursuri-dans-adulti/',
+    children: [
+      { label: 'Street Dance', href: '/cursuri-dans-adulti/street-dance/' },
+      { label: 'Dans de Societate', href: '/cursuri-dans-adulti/dans-societate/' },
+    ],
+  },
   { label: 'Dansul Mirilor', href: '/cursuri-dansul-mirilor/' },
-  { label: 'Despre Noi', href: '/despre-bloomart/' },
-  { label: 'Contact', href: '/contact/' },
+  { label: 'Orar & Tarife', href: '/orar-tarife/' },
+  {
+    label: 'Despre Noi',
+    href: '/despre-bloomart/',
+    children: [
+      { label: 'Galerie', href: '/galerie/' },
+      { label: 'Întrebări Frecvente', href: '/intrebari-frecvente/' },
+      { label: 'Contact', href: '/contact/' },
+    ],
+  },
 ];
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-white/10">
+<header class="sticky top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2">
-        <span class="text-2xl font-display font-bold text-white tracking-wider">BLOOM<span class="text-brand">ART</span></span>
+      <a href="/" class="flex items-center" aria-label="Bloomart Academy — Acasă">
+        <img
+          src="/images/brand/bloomart-logo-horizontal.png"
+          alt="Bloomart Academy"
+          class="h-10 lg:h-12 w-auto"
+          width="240"
+          height="60"
+        />
       </a>
 
       <!-- Desktop Nav -->
@@ -29,16 +50,16 @@ const navItems = [
         {navItems.map((item) =>
           item.children ? (
             <div class="relative group">
-              <button class="px-3 py-2 text-sm font-medium text-text-on-dark hover:text-brand transition-colors uppercase tracking-wider font-display">
+              <a href={item.href} class="inline-flex items-center px-3 py-2 text-sm font-medium text-text hover:text-brand transition-colors font-display">
                 {item.label}
                 <svg class="inline-block w-3 h-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </a>
               <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div class="bg-dark-light border border-white/10 rounded-lg shadow-xl py-2 min-w-[200px]">
+                <div class="bg-white border border-gray-200 shadow-lg py-2 min-w-[220px]">
                   {item.children.map((child) => (
-                    <a href={child.href} class="block px-4 py-2 text-sm text-text-on-dark hover:text-brand hover:bg-white/5 transition-colors">
+                    <a href={child.href} class="block px-4 py-2 text-sm text-text hover:text-brand hover:bg-surface-alt transition-colors">
                       {child.label}
                     </a>
                   ))}
@@ -46,7 +67,7 @@ const navItems = [
               </div>
             </div>
           ) : (
-            <a href={item.href} class="px-3 py-2 text-sm font-medium text-text-on-dark hover:text-brand transition-colors uppercase tracking-wider font-display">
+            <a href={item.href} class="px-3 py-2 text-sm font-medium text-text hover:text-brand transition-colors font-display">
               {item.label}
             </a>
           )
@@ -55,14 +76,14 @@ const navItems = [
 
       <!-- CTA + Mobile toggle -->
       <div class="flex items-center gap-4">
-        <a href="/formular-inscriere/" class="hidden sm:inline-flex items-center px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-display font-semibold text-sm uppercase tracking-wider rounded-lg transition-colors">
-          Înscrie-te
+        <a href="/formular-inscriere/" class="hidden sm:inline-flex items-center px-[30px] py-[12px] border border-brand text-brand hover:bg-brand hover:text-white font-display font-medium text-sm transition-colors">
+          Inscrie-te
         </a>
 
         <!-- Mobile menu button -->
         <button
           id="mobile-menu-btn"
-          class="lg:hidden p-2 text-text-on-dark hover:text-brand transition-colors"
+          class="lg:hidden p-2 text-text hover:text-brand transition-colors"
           aria-label="Toggle menu"
         >
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,28 +95,28 @@ const navItems = [
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="lg:hidden hidden bg-dark-light border-t border-white/10">
+  <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200">
     <div class="px-4 py-4 space-y-1">
       {navItems.map((item) =>
         item.children ? (
           <div>
-            <span class="block px-3 py-2 text-sm font-display uppercase tracking-wider text-text-light">
+            <a href={item.href} class="block px-3 py-2 text-sm font-display font-semibold text-text hover:text-brand transition-colors">
               {item.label}
-            </span>
+            </a>
             {item.children.map((child) => (
-              <a href={child.href} class="block px-6 py-2 text-sm text-text-on-dark hover:text-brand transition-colors">
+              <a href={child.href} class="block px-6 py-2 text-sm text-text hover:text-brand transition-colors">
                 {child.label}
               </a>
             ))}
           </div>
         ) : (
-          <a href={item.href} class="block px-3 py-2 text-sm font-display uppercase tracking-wider text-text-on-dark hover:text-brand transition-colors">
+          <a href={item.href} class="block px-3 py-2 text-sm font-display text-text hover:text-brand transition-colors">
             {item.label}
           </a>
         )
       )}
-      <a href="/formular-inscriere/" class="block mx-3 mt-4 px-5 py-2.5 bg-accent text-white font-display font-semibold text-sm uppercase tracking-wider rounded-lg text-center">
-        Înscrie-te
+      <a href="/formular-inscriere/" class="block mx-3 mt-4 px-[30px] py-[12px] border border-brand text-brand hover:bg-brand hover:text-white font-display font-medium text-sm text-center transition-colors">
+        Inscrie-te
       </a>
     </div>
   </div>

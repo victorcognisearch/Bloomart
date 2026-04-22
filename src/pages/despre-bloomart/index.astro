@@ -9,30 +9,23 @@ import CTAButton from '../../components/CTAButton.astro';
 >
 
   <!-- ========== HERO ========== -->
-  <section class="relative min-h-[60vh] lg:min-h-[70vh] flex items-end pb-20 lg:pb-28 overflow-hidden bg-dark">
-    <img
-      src="/images/homepage/group-practice.webp"
-      alt="Echipa BloomArt Academy"
-      class="absolute inset-0 w-full h-full object-cover opacity-30"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/40"></div>
-
+  <section class="relative pt-20 pb-10 lg:pt-24 lg:pb-12 overflow-hidden bg-brand">
     <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
       <div class="flex items-center gap-3 mb-6">
-        <span class="w-12 h-px bg-brand-light"></span>
-        <span class="text-brand-light text-sm font-semibold uppercase tracking-[0.2em]">Despre Noi</span>
+        <span class="w-12 h-1 bg-mandarin rounded-full"></span>
+        <span class="text-white text-sm font-semibold tracking-wider">Despre Noi</span>
       </div>
-      <h1 class="text-[clamp(2.5rem,6vw,5.5rem)] font-display font-bold text-white leading-[0.95] max-w-4xl">
+      <h1 class="font-display font-bold text-white leading-[1.05] max-w-4xl text-3xl sm:text-4xl lg:text-5xl">
         Povestea BloomArt Academy
       </h1>
-      <p class="mt-8 text-lg lg:text-xl text-white/60 max-w-xl leading-relaxed">
+      <p class="mt-8 text-lg lg:text-xl text-white/90 max-w-xl leading-relaxed">
         De peste 10 ani aducem bucuria dansului în viața a sute de cursanți din București.
       </p>
     </div>
   </section>
 
   <!-- ========== ACADEMY STORY — editorial split ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32 overflow-hidden" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text overflow-hidden" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <!-- Image side -->
@@ -59,12 +52,12 @@ import CTAButton from '../../components/CTAButton.astro';
         <div class="lg:col-span-6 lg:col-start-7">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-12 h-px bg-brand"></span>
-            <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Povestea Noastră</span>
+            <span class="text-brand text-sm font-semibold tracking-wider">Povestea Noastră</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-display font-bold text-white leading-tight mb-8">
+          <h2 class="text-4xl sm:text-5xl font-display font-bold text-text leading-tight mb-8">
             Cum a început totul
           </h2>
-          <div class="space-y-5 text-white/50 leading-relaxed text-lg">
+          <div class="space-y-5 text-text-light leading-relaxed text-lg">
             <p>
               Povestea BloomArt a început la finalul anului 2021, când fondatorii, Alina și Catalin Otelea, și-au dorit să creeze mai mult decât un studio de dans: un spațiu prietenos, familiar, în care fiecare, mic sau mare, să se simtă ca acasă și să-și poată explora latura creativă, coordonarea corporală și muzicalitatea.
             </p>
@@ -84,53 +77,53 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== VALUES — numbered list ========== -->
-  <section class="bg-dark py-24 lg:py-32" data-reveal>
+  <section class="bg-white py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-4">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Valorile Noastre</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Valorile Noastre</span>
       </div>
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-20 max-w-3xl">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-text leading-tight mb-20 max-w-3xl">
         În ce credem
       </h2>
 
       <div class="grid md:grid-cols-2 gap-x-16 gap-y-16">
         <!-- Item 1 -->
         <div class="group flex gap-6">
-          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">01</span>
+          <span class="text-5xl lg:text-6xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors duration-500 leading-none">01</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Pasiune</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text  mb-3">Pasiune</h3>
+            <p class="text-text-light leading-relaxed">
               Dansul nu e doar mișcare, e emoție. Punem suflet în fiecare oră de curs și vrem să simți asta din prima secundă.
             </p>
           </div>
         </div>
         <!-- Item 2 -->
         <div class="group flex gap-6">
-          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">02</span>
+          <span class="text-5xl lg:text-6xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors duration-500 leading-none">02</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Comunitate</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text  mb-3">Comunitate</h3>
+            <p class="text-text-light leading-relaxed">
               BloomArt e mai mult decât o școală — e o familie. Aici te simți binevenit, indiferent de nivel, vârstă sau experiență.
             </p>
           </div>
         </div>
         <!-- Item 3 -->
         <div class="group flex gap-6">
-          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">03</span>
+          <span class="text-5xl lg:text-6xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors duration-500 leading-none">03</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Adaptabilitate</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text  mb-3">Adaptabilitate</h3>
+            <p class="text-text-light leading-relaxed">
               Fiecare cursant e diferit. Adaptăm lecțiile la nevoile, ritmul și obiectivele tale, pentru ca tu să progresezi în ritmul tău.
             </p>
           </div>
         </div>
         <!-- Item 4 -->
         <div class="group flex gap-6">
-          <span class="text-5xl lg:text-6xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors duration-500 leading-none">04</span>
+          <span class="text-5xl lg:text-6xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors duration-500 leading-none">04</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white uppercase tracking-wide mb-3">Bucurie</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text  mb-3">Bucurie</h3>
+            <p class="text-text-light leading-relaxed">
               Vrem să pleci de la fiecare lecție cu un zâmbet. Dansul trebuie să fie distractiv, nu stresant — la noi, râsul e la fel de important ca pașii.
             </p>
           </div>
@@ -140,13 +133,13 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== INSTRUCTORS — editorial spotlights ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-4">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Echipa</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Echipa</span>
       </div>
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-20 max-w-xl">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-text leading-tight mb-20 max-w-xl">
         Antrenorii BloomArt
       </h2>
 
@@ -163,9 +156,9 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
         </div>
         <div class="lg:col-span-6 lg:col-start-7">
-          <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Co-fondator · Dans Sportiv</span>
-          <h3 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2 mb-6">Alina Otelea</h3>
-          <div class="space-y-4 text-white/50 leading-relaxed text-lg">
+          <span class="text-brand text-sm font-semibold tracking-wider">Co-fondator · Dans Sportiv</span>
+          <h3 class="text-3xl sm:text-4xl font-display font-bold text-text mt-2 mb-6">Alina Otelea</h3>
+          <div class="space-y-4 text-text-light leading-relaxed text-lg">
             <p>
               Alina numește sala de dans „a doua casă" încă din copilărie, când a început să practice dansul sportiv de performanță. După o carieră de nivel înalt, și-a canalizat toată pasiunea în predare.
             </p>
@@ -175,10 +168,10 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
           <div class="mt-8 space-y-4">
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Național <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Național <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2019 – Campionatul Național 10 Dansuri, Adulți – loc 3</li>
                 <li>2018 – Cupa României – LA loc 4</li>
                 <li>2016 – Campionatul Național U21 Latino – loc 3</li>
@@ -194,10 +187,10 @@ import CTAButton from '../../components/CTAButton.astro';
               </ul>
             </details>
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Internațional <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Internațional <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2013 – WDSF Bucharest Open – LA Youth – loc 1</li>
                 <li>2012–2020 – Finalistă și medaliată la competiții internaționale WDSF</li>
                 <li>Locul 24 mondial Youth, WDSF World Ranking</li>
@@ -211,9 +204,9 @@ import CTAButton from '../../components/CTAButton.astro';
       <!-- Catalin — text left, image right -->
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center mt-24 lg:mt-32">
         <div class="lg:col-span-6 order-2 lg:order-1">
-          <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Co-fondator · Dans Sportiv & Salsa</span>
-          <h3 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2 mb-6">Catalin Otelea</h3>
-          <div class="space-y-4 text-white/50 leading-relaxed text-lg">
+          <span class="text-brand text-sm font-semibold tracking-wider">Co-fondator · Dans Sportiv & Salsa</span>
+          <h3 class="text-3xl sm:text-4xl font-display font-bold text-text mt-2 mb-6">Catalin Otelea</h3>
+          <div class="space-y-4 text-text-light leading-relaxed text-lg">
             <p>
               Cu o energie debordantă încă din tinerețe, Catalin a practicat mai multe sporturi de performanță înainte de a se dedica dansului sportiv și salsei.
             </p>
@@ -223,10 +216,10 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
           <div class="mt-8 space-y-4">
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Național <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Național <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2019 – Cupa României, Dans Latino – loc 3</li>
                 <li>2018 – Cupa României – Latino loc 2, Standard loc 6</li>
                 <li>2018 – Campionatul Național Dans Sportiv, 10 Dansuri – loc 2</li>
@@ -236,10 +229,10 @@ import CTAButton from '../../components/CTAButton.astro';
               </ul>
             </details>
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Internațional <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Internațional <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2011–2014 – Campion European Salsa Latino Show Solo Male</li>
                 <li>2011–2014 – Vicecampion Mondial Salsa Latino Show Solo Male</li>
                 <li>2017 – WDSF Dance Masters Rising Star Latin – loc 3</li>
@@ -274,9 +267,9 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
         </div>
         <div class="lg:col-span-6 lg:col-start-7">
-          <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Street Dance · Dancehall · Hip-Hop · Waacking</span>
-          <h3 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2 mb-6">Irina Florea</h3>
-          <div class="space-y-4 text-white/50 leading-relaxed text-lg">
+          <span class="text-brand text-sm font-semibold tracking-wider">Street Dance · Dancehall · Hip-Hop · Waacking</span>
+          <h3 class="text-3xl sm:text-4xl font-display font-bold text-text mt-2 mb-6">Irina Florea</h3>
+          <div class="space-y-4 text-text-light leading-relaxed text-lg">
             <p>
               Cu peste 15 ani de experiență, Irina este instructor de dans specializată în stilurile din aria Street Dance: Dancehall, Hip-Hop, Waacking și nu numai. Absolventă a Școlii de Arte București, specializare Coregrafie.
             </p>
@@ -286,10 +279,10 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
           <div class="mt-8 space-y-4">
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2024 – Locul 2 Waackers Turn Bulgaria</li>
                 <li>2022 și 2023 – Finalistă Red Bull Dance Your Style</li>
                 <li>2018 – Locul 2 Skillz Dem Up Cehia 2vs2</li>
@@ -305,9 +298,9 @@ import CTAButton from '../../components/CTAButton.astro';
       <!-- Giulia Crăciun — text left, image right -->
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center mt-24 lg:mt-32">
         <div class="lg:col-span-6 order-2 lg:order-1">
-          <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Dans Modern Copii · Dans Sportiv Performanță</span>
-          <h3 class="text-3xl sm:text-4xl font-display font-bold text-white mt-2 mb-6">Giulia Crăciun</h3>
-          <div class="space-y-4 text-white/50 leading-relaxed text-lg">
+          <span class="text-brand text-sm font-semibold tracking-wider">Dans Modern Copii · Dans Sportiv Performanță</span>
+          <h3 class="text-3xl sm:text-4xl font-display font-bold text-text mt-2 mb-6">Giulia Crăciun</h3>
+          <div class="space-y-4 text-text-light leading-relaxed text-lg">
             <p>
               Giulia Crăciun practică dansul sportiv de performanță de la vârsta de 3 ani. De-a lungul carierei competitive a participat la numeroase competiții naționale și internaționale WDSF, iar din 2018 predă dans sportiv, dans modern și formații de grup.
             </p>
@@ -317,19 +310,19 @@ import CTAButton from '../../components/CTAButton.astro';
           </div>
           <div class="mt-8 space-y-4">
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Național <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Național <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>2023 – Locul 4 la Campionatul Național Dans Sportiv, 10 Dansuri</li>
                 <li>2019 – Semifinalistă la Campionatul Național Dans Sportiv, 10 Dansuri</li>
               </ul>
             </details>
             <details class="group">
-              <summary class="text-brand text-sm font-semibold uppercase tracking-[0.2em] cursor-pointer select-none">
-                Palmares Internațional <span class="text-white/30 group-open:rotate-90 inline-block transition-transform">▸</span>
+              <summary class="text-brand text-sm font-semibold tracking-wider cursor-pointer select-none">
+                Palmares Internațional <span class="text-text-light group-open:rotate-90 inline-block transition-transform">▸</span>
               </summary>
-              <ul class="mt-3 space-y-1.5 text-white/40 text-sm pl-4 border-l border-brand/20">
+              <ul class="mt-3 space-y-1.5 text-text-light text-sm pl-4 border-l border-brand/20">
                 <li>Participare la numeroase competiții internaționale WDSF</li>
                 <li>2022 – Semifinalistă la WDSF Open Youth Dance Masters București</li>
               </ul>
@@ -357,18 +350,18 @@ import CTAButton from '../../components/CTAButton.astro';
       alt="Dans BloomArt"
       class="absolute inset-0 w-full h-full object-cover opacity-20"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand to-brand-dark"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-6 block">Începe acum</span>
-      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[0.95] mb-8">
+      <span class="text-mandarin text-sm font-semibold tracking-wider mb-6 block">Începe acum</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.05] mb-8">
         Hai la dans cu noi
       </h2>
-      <p class="text-xl text-white/40 mb-12 max-w-xl mx-auto">
+      <p class="text-xl text-text-light mb-12 max-w-xl mx-auto">
         Prima ședință este gratuită. Înscrie-te și descoperă bucuria dansului.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <CTAButton href="/formular-inscriere/" label="Înscrie-te Acum" variant="primary" size="lg" />
+        <CTAButton href="/formular-inscriere/" label="Înscrie-te Acum" variant="mandarin" size="lg" />
         <CTAButton href="/contact/" label="Contactează-ne" variant="outline" size="lg" />
       </div>
     </div>

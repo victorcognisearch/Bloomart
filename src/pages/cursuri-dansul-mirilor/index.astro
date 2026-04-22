@@ -9,33 +9,26 @@ import CTAButton from '../../components/CTAButton.astro';
 >
 
   <!-- ========== HERO ========== -->
-  <section class="relative min-h-[60vh] lg:min-h-[70vh] flex items-end pb-20 lg:pb-28 overflow-hidden bg-dark">
-    <img
-      src="/images/homepage/dansul-mirilor-nunta.webp"
-      alt="Cuplu dansând la nuntă"
-      class="absolute inset-0 w-full h-full object-cover opacity-30"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/40"></div>
-
+  <section class="relative pt-20 pb-10 lg:pt-24 lg:pb-12 overflow-hidden bg-brand">
     <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
       <div class="flex items-center gap-3 mb-6">
-        <span class="w-12 h-px bg-brand-light"></span>
-        <span class="text-brand-light text-sm font-semibold uppercase tracking-[0.2em]">Dansul Mirilor</span>
+        <span class="w-12 h-1 bg-mandarin rounded-full"></span>
+        <span class="text-white text-sm font-semibold tracking-wider">Dansul Mirilor</span>
       </div>
-      <h1 class="text-[clamp(2.5rem,6vw,5.5rem)] font-display font-bold text-white leading-[0.95] max-w-4xl">
+      <h1 class="font-display font-bold text-white leading-[1.05] max-w-4xl text-3xl sm:text-4xl lg:text-5xl">
         Dansul vostru,<br />povestea voastră
       </h1>
-      <p class="mt-8 text-lg lg:text-xl text-white/60 max-w-xl leading-relaxed">
+      <p class="mt-8 text-lg lg:text-xl text-white/90 max-w-xl leading-relaxed">
         Transformăm primul dans într-un moment de neuitat. Coregrafie personalizată, pe melodia voastră, adaptată nivelului vostru.
       </p>
       <div class="mt-10">
-        <CTAButton href="/contact/" label="Programează o consultație" variant="primary" size="lg" />
+        <CTAButton href="/contact/" label="Programează o consultație" variant="mandarin" size="lg" />
       </div>
     </div>
   </section>
 
   <!-- ========== EDITORIAL SPLIT — De ce BloomArt ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32 overflow-hidden" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text overflow-hidden" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <!-- Image side -->
@@ -53,12 +46,12 @@ import CTAButton from '../../components/CTAButton.astro';
         <div class="lg:col-span-6 lg:col-start-7">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-12 h-px bg-brand"></span>
-            <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">De Ce BloomArt</span>
+            <span class="text-brand text-sm font-semibold tracking-wider">De Ce BloomArt</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-display font-bold text-white leading-tight mb-8">
+          <h2 class="text-4xl sm:text-5xl font-display font-bold text-text leading-tight mb-8">
             Coregrafie creată special pentru voi
           </h2>
-          <div class="space-y-5 text-white/50 leading-relaxed text-lg">
+          <div class="space-y-5 text-text-light leading-relaxed text-lg">
             <p>
               Indiferent de nivelul vostru de dans — chiar dacă simțiți că aveți „două picioare stângi" — antrenorii noștri vă ghidează pas cu pas spre un dans care vă reflectă personalitatea și povestea de iubire.
             </p>
@@ -75,52 +68,52 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== HOW IT WORKS — Numbered Steps ========== -->
-  <section class="bg-dark py-24 lg:py-32" data-reveal>
+  <section class="bg-white py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Cum Funcționează</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Cum Funcționează</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text leading-tight mb-4">
         De la prima întâlnire la dansul perfect
       </h2>
-      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+      <p class="text-text-light text-lg mb-16 max-w-2xl">
         Un proces simplu, creat să vă facă pregătirea plăcută și fără stres.
       </p>
 
       <div class="grid md:grid-cols-2 gap-x-16 gap-y-16">
         <div class="group flex gap-6">
-          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">01</span>
+          <span class="text-5xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors">01</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white mb-2">Consultație gratuită</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text mb-2">Consultație gratuită</h3>
+            <p class="text-text-light leading-relaxed">
               Într-o discuție de 30 de minute (telefonic sau la studio), stabilim împreună stilul de dans, melodia și numărul de ședințe de care aveți nevoie.
             </p>
           </div>
         </div>
         <div class="group flex gap-6">
-          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">02</span>
+          <span class="text-5xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors">02</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white mb-2">Lecții personalizate</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text mb-2">Lecții personalizate</h3>
+            <p class="text-text-light leading-relaxed">
               Ședințe private de 45 de minute, doar voi doi cu antrenorul. Ritmul și dificultatea sunt adaptate complet la nivelul vostru.
             </p>
           </div>
         </div>
         <div class="group flex gap-6">
-          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">03</span>
+          <span class="text-5xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors">03</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white mb-2">Repetiție la locație</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text mb-2">Repetiție la locație</h3>
+            <p class="text-text-light leading-relaxed">
               La ultima ședință, antrenorul vine la locația nunții voastre pentru a vă asigura că totul funcționează perfect pe ringul de dans real.
             </p>
           </div>
         </div>
         <div class="group flex gap-6">
-          <span class="text-5xl font-display font-bold text-white/10 group-hover:text-brand/30 transition-colors">04</span>
+          <span class="text-5xl font-display font-bold text-gray-200 group-hover:text-brand/30 transition-colors">04</span>
           <div>
-            <h3 class="text-xl font-display font-bold text-white mb-2">Dansul perfect</h3>
-            <p class="text-white/40 leading-relaxed">
+            <h3 class="text-xl font-display font-bold text-text mb-2">Dansul perfect</h3>
+            <p class="text-text-light leading-relaxed">
               Dansați cu încredere și bucurie în fața invitaților. Un moment pe care îl veți revedea mereu cu drag.
             </p>
           </div>
@@ -130,29 +123,29 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== PACKAGES — Pricing Cards ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Pachete</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Pachete</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text leading-tight mb-4">
         Alege pachetul potrivit
       </h2>
-      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+      <p class="text-text-light text-lg mb-16 max-w-2xl">
         Toate pachetele includ consultația inițială gratuită, coregrafie personalizată și repetiția la locația nunții.
       </p>
 
       <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
         <!-- 5 sessions -->
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8 flex flex-col hover:border-white/20 transition-all duration-300">
-          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Esențial</p>
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl p-8 flex flex-col hover:border-gray-300 transition-all duration-300">
+          <p class="text-brand text-sm font-semibold tracking-wider mb-4">Pachet Basic</p>
           <div class="mb-2">
-            <span class="text-5xl font-display font-bold text-white">1200</span>
-            <span class="text-white/40 text-lg ml-1">RON</span>
+            <span class="text-5xl font-display font-bold text-text">1200</span>
+            <span class="text-text-light text-lg ml-1">RON</span>
           </div>
-          <p class="text-white/30 text-sm mb-6">240 RON / ședință</p>
-          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+          <p class="text-text-light text-sm mb-6">240 RON / ședință</p>
+          <ul class="space-y-3 text-text-light text-sm mb-8 flex-1">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               5 ședințe private (45 min)
@@ -169,6 +162,10 @@ import CTAButton from '../../components/CTAButton.astro';
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Consultație gratuită
             </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Lecții suplimentare la 220 RON / 60 min
+            </li>
           </ul>
           <div class="mt-auto">
             <CTAButton href="/contact/" label="Alege pachetul" variant="outline" size="md" />
@@ -176,15 +173,15 @@ import CTAButton from '../../components/CTAButton.astro';
         </div>
 
         <!-- 7 sessions — recommended -->
-        <div class="relative bg-dark-light/50 border-2 border-brand rounded-2xl p-8 flex flex-col shadow-[0_0_40px_rgba(62,179,145,0.1)]">
-          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand text-dark text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">Recomandat</span>
-          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Confort</p>
+        <div class="relative bg-surface-alt border-2 border-brand rounded-2xl p-8 flex flex-col shadow-[0_0_40px_rgba(62,179,145,0.1)]">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand text-dark text-xs font-bold tracking-wide px-4 py-1 rounded-full">Recomandat</span>
+          <p class="text-brand text-sm font-semibold tracking-wider mb-4">Pachet Standard</p>
           <div class="mb-2">
-            <span class="text-5xl font-display font-bold text-white">1700</span>
-            <span class="text-white/40 text-lg ml-1">RON</span>
+            <span class="text-5xl font-display font-bold text-text">1600</span>
+            <span class="text-text-light text-lg ml-1">RON</span>
           </div>
-          <p class="text-white/30 text-sm mb-6">243 RON / ședință</p>
-          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+          <p class="text-text-light text-sm mb-6">229 RON / ședință</p>
+          <ul class="space-y-3 text-text-light text-sm mb-8 flex-1">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               7 ședințe private (45 min)
@@ -205,6 +202,10 @@ import CTAButton from '../../components/CTAButton.astro';
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Repetiție la locația nunții
             </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Lecții suplimentare la 220 RON / 60 min
+            </li>
           </ul>
           <div class="mt-auto">
             <CTAButton href="/contact/" label="Alege pachetul" variant="primary" size="md" />
@@ -212,14 +213,14 @@ import CTAButton from '../../components/CTAButton.astro';
         </div>
 
         <!-- 10 sessions -->
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8 flex flex-col hover:border-white/20 transition-all duration-300">
-          <p class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-4">Premium</p>
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl p-8 flex flex-col hover:border-gray-300 transition-all duration-300">
+          <p class="text-brand text-sm font-semibold tracking-wider mb-4">Pachet Premium</p>
           <div class="mb-2">
-            <span class="text-5xl font-display font-bold text-white">2400</span>
-            <span class="text-white/40 text-lg ml-1">RON</span>
+            <span class="text-5xl font-display font-bold text-text">2200</span>
+            <span class="text-text-light text-lg ml-1">RON</span>
           </div>
-          <p class="text-white/30 text-sm mb-6">240 RON / ședință</p>
-          <ul class="space-y-3 text-white/50 text-sm mb-8 flex-1">
+          <p class="text-text-light text-sm mb-6">220 RON / ședință</p>
+          <ul class="space-y-3 text-text-light text-sm mb-8 flex-1">
             <li class="flex items-start gap-2">
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               10 ședințe private (45 min)
@@ -240,6 +241,10 @@ import CTAButton from '../../components/CTAButton.astro';
               <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Repetiție la locația nunții
             </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brand mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Lecții suplimentare la 220 RON / 60 min
+            </li>
           </ul>
           <div class="mt-auto">
             <CTAButton href="/contact/" label="Alege pachetul" variant="outline" size="md" />
@@ -248,10 +253,10 @@ import CTAButton from '../../components/CTAButton.astro';
       </div>
 
       <div class="mt-10 text-center space-y-2">
-        <p class="text-white/30 text-sm">
-          Ședință individuală disponibilă și separat — 250 RON / 45 min.
+        <p class="text-text-light text-sm">
+          Ședință individuală disponibilă și separat — 220 RON / 60 min.
         </p>
-        <p class="text-white/30 text-sm">
+        <p class="text-text-light text-sm">
           Ai nevoie de mai multe ședințe? <a href="/contact/" class="text-brand hover:text-brand-light transition-colors underline underline-offset-2">Contactează-ne</a> pentru un program personalizat.
         </p>
       </div>
@@ -259,96 +264,96 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== FAQ ACCORDION ========== -->
-  <section class="bg-dark py-24 lg:py-32" data-reveal>
+  <section class="bg-white py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Întrebări Frecvente</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Întrebări Frecvente</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text leading-tight mb-16">
         Tot ce trebuie să știți
       </h2>
 
       <div class="max-w-3xl space-y-4">
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Când ar trebui să începem lecțiile?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Când ar trebui să începem lecțiile?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Vă recomandăm să începeți lecțiile cu cel puțin 2 luni înainte de nuntă. Astfel aveți suficient timp să învățați coregrafia, să o exersați acasă și să vă simțiți confortabil pe ringul de dans.
             </p>
           </div>
         </div>
 
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Câte ședințe avem nevoie?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Câte ședințe avem nevoie?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Depinde de complexitatea coregrafiei dorite și de experiența voastră anterioară. Majoritatea cuplurilor învață o coregrafie de dificultate medie în 5–10 ședințe. La consultația inițială stabilim împreună numărul optim de ședințe.
             </p>
           </div>
         </div>
 
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Nu am dansat niciodată. E ok?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Nu am dansat niciodată. E ok?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Absolut! Majoritatea cuplurilor care vin la noi nu au experiență anterioară de dans. Coregrafia este adaptată nivelului vostru și construită să vă pună în valoare calitățile naturale. Antrenorii noștri au experiența necesară pentru a vă ghida de la zero la un dans de care să fiți mândri.
             </p>
           </div>
         </div>
 
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Ce stil de dans putem alege?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Ce stil de dans putem alege?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Orice stil doriți! Cele mai populare alegeri sunt valsul clasic, tango-ul și mixurile moderne. Puteți alege un singur stil sau o combinație — coregrafia este complet personalizată pe gusturile și personalitatea voastră.
             </p>
           </div>
         </div>
 
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Cât durează o ședință?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Cât durează o ședință?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Fiecare ședință durează 45 de minute — suficient pentru a învăța pași noi și a repeta coregrafia, fără a fi obositor. Programul este flexibil și stabilit de comun acord cu antrenorul.
             </p>
           </div>
         </div>
 
-        <div class="faq-item border border-white/10 rounded-xl overflow-hidden">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left">
-            <span class="text-white font-display font-semibold text-lg pr-4">Putem alege orice melodie?</span>
+            <span class="text-text font-display font-semibold text-lg pr-4">Putem alege orice melodie?</span>
             <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-5">
-            <p class="text-white/40 leading-relaxed">
+            <p class="text-text-light leading-relaxed">
               Da! Coregrafia este creată special pe melodia voastră. Dacă nu v-ați decis încă, antrenorul vă poate ajuta cu sugestii care se potrivesc stilului de dans dorit.
             </p>
           </div>
@@ -358,22 +363,22 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== TRAINERS ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Antrenorii Voștri</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Antrenorii Voștri</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-4">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text leading-tight mb-4">
         Pe mâini bune
       </h2>
-      <p class="text-white/40 text-lg mb-16 max-w-2xl">
+      <p class="text-text-light text-lg mb-16 max-w-2xl">
         Alina și Cătălin, fondatorii BloomArt Academy, vă ghidează personal prin fiecare pas al coregrafiei.
       </p>
 
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl">
         <!-- Alina -->
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-all duration-300">
           <div class="aspect-[4/5] overflow-hidden">
             <img
               src="/images/team/alina-otelea.webp"
@@ -383,16 +388,16 @@ import CTAButton from '../../components/CTAButton.astro';
             />
           </div>
           <div class="p-6 lg:p-8">
-            <h3 class="text-xl font-display font-bold text-white mb-1">Alina Otelea</h3>
-            <p class="text-brand text-sm font-semibold uppercase tracking-wider mb-4">Co-fondator & Antrenor</p>
-            <p class="text-white/40 leading-relaxed text-sm">
+            <h3 class="text-xl font-display font-bold text-text mb-1">Alina Otelea</h3>
+            <p class="text-brand text-sm font-semibold tracking-wide mb-4">Co-fondator & Antrenor</p>
+            <p class="text-text-light leading-relaxed text-sm">
               Dansul a fost a doua ei casă încă din copilărie, cu o carieră de performanță în dans sportiv. Astăzi îmbină experiența competițională cu pasiunea de a ajuta cuplurile să strălucească pe ringul de dans.
             </p>
           </div>
         </div>
 
         <!-- Catalin -->
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-all duration-300">
           <div class="aspect-[4/5] overflow-hidden">
             <img
               src="/images/team/catalin-otelea.webp"
@@ -402,9 +407,9 @@ import CTAButton from '../../components/CTAButton.astro';
             />
           </div>
           <div class="p-6 lg:p-8">
-            <h3 class="text-xl font-display font-bold text-white mb-1">Cătălin Otelea</h3>
-            <p class="text-brand text-sm font-semibold uppercase tracking-wider mb-4">Co-fondator & Antrenor</p>
-            <p class="text-white/40 leading-relaxed text-sm">
+            <h3 class="text-xl font-display font-bold text-text mb-1">Cătălin Otelea</h3>
+            <p class="text-brand text-sm font-semibold tracking-wide mb-4">Co-fondator & Antrenor</p>
+            <p class="text-text-light leading-relaxed text-sm">
               Cu o energie debordantă și expertiză în salsa și dans sportiv competițional, Cătălin ajută cuplurile să descopere bucuria și încrederea în dans. Menționat cu drag în recenziile cursanților.
             </p>
           </div>
@@ -414,18 +419,18 @@ import CTAButton from '../../components/CTAButton.astro';
   </section>
 
   <!-- ========== TESTIMONIALS ========== -->
-  <section class="bg-dark py-24 lg:py-32" data-reveal>
+  <section class="bg-white py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center gap-3 mb-6">
         <span class="w-12 h-px bg-brand"></span>
-        <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em]">Testimoniale</span>
+        <span class="text-brand text-sm font-semibold tracking-wider">Testimoniale</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white leading-tight mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text leading-tight mb-16">
         Ce spun cuplurile despre noi
       </h2>
 
       <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8">
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl p-8">
           <div class="flex gap-1 mb-6">
             {[...Array(5)].map(() => (
               <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
@@ -433,16 +438,16 @@ import CTAButton from '../../components/CTAButton.astro';
               </svg>
             ))}
           </div>
-          <p class="text-white/50 leading-relaxed mb-6">
+          <p class="text-text-light leading-relaxed mb-6">
             Recomand din suflet BloomArt Academy și mai ales pe Cătălin. El ne-a ajutat pentru dansul mirilor și am învățat foarte multe într-un timp atât de scurt. Ne-a făcut sa ne placa sa dansam și sa avem încredere ca o facem și bine. Mulțumim!!
           </p>
           <div>
-            <p class="text-white font-display font-semibold">Elena Daniela</p>
-            <p class="text-white/30 text-sm">Cursant — dansul mirilor</p>
+            <p class="text-text font-display font-semibold">Elena Daniela</p>
+            <p class="text-text-light text-sm">Cursant — dansul mirilor</p>
           </div>
         </div>
 
-        <div class="bg-dark-light/50 border border-white/10 rounded-2xl p-8">
+        <div class="bg-surface-alt border border-gray-200 rounded-2xl p-8">
           <div class="flex gap-1 mb-6">
             {[...Array(5)].map(() => (
               <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
@@ -450,12 +455,12 @@ import CTAButton from '../../components/CTAButton.astro';
               </svg>
             ))}
           </div>
-          <p class="text-white/50 leading-relaxed mb-6">
+          <p class="text-text-light leading-relaxed mb-6">
             Am avut privilegiul să pregătim coregrafia pt dansul mirilor la nunta noastră de argint sub îndrumarea celor mai răbdători, înțelegători și funny antrenori, a fost o experiența mi-nu-na-ta! Mulțumim dragilor, cu siguranță vom reveni.
           </p>
           <div>
-            <p class="text-white font-display font-semibold">Corina Dragne</p>
-            <p class="text-white/30 text-sm">Cursant — dansul mirilor</p>
+            <p class="text-text font-display font-semibold">Corina Dragne</p>
+            <p class="text-text-light text-sm">Cursant — dansul mirilor</p>
           </div>
         </div>
       </div>
@@ -469,18 +474,18 @@ import CTAButton from '../../components/CTAButton.astro';
       alt="Dans BloomArt"
       class="absolute inset-0 w-full h-full object-cover opacity-20"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand to-brand-dark"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-6 block">Primul Pas</span>
-      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[0.95] mb-8">
+      <span class="text-mandarin text-sm font-semibold tracking-wider mb-6 block">Primul Pas</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.05] mb-8">
         Primul pas spre dansul perfect
       </h2>
-      <p class="text-xl text-white/40 mb-12 max-w-xl mx-auto">
+      <p class="text-xl text-text-light mb-12 max-w-xl mx-auto">
         Consultația inițială e gratuită. Hai să povestim despre dansul vostru.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <CTAButton href="/contact/" label="Programează Consultația" variant="primary" size="lg" />
+        <CTAButton href="/contact/" label="Programează Consultația" variant="mandarin" size="lg" />
         <CTAButton href="https://wa.me/40746423423" label="WhatsApp" variant="secondary" size="lg" />
       </div>
     </div>

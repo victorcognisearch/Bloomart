@@ -42,26 +42,31 @@
 }
 
 @theme {
-  /* Brand — Bloomart teal palette */
+  /* Brand — Bloomart teal palette (matches bloomart.ro) */
   --color-brand: #3EB391;
   --color-brand-light: #5ECFAD;
   --color-brand-dark: #2D8A6E;
 
-  /* Dark sections — bold & energetic */
-  --color-dark: #1A1A2E;
-  --color-dark-light: #25253D;
+  /* Dark sections — charcoal, matching old site */
+  --color-dark: #18181B;
+  --color-dark-light: #2C2C32;
 
   /* Neutrals */
-  --color-surface: #FAFAFA;
-  --color-surface-warm: #F5F0EB;
+  --color-surface: #FFFFFF;
+  --color-surface-warm: #F8FDFC;
+  --color-surface-alt: #FAFAFA;
   --color-white: #FFFFFF;
-  --color-text: #2D2D2D;
+  --color-text: #333333;
   --color-text-light: #6B7280;
   --color-text-on-dark: #F0F0F0;
 
-  /* Accent — for CTAs and highlights */
-  --color-accent: #FF6B35;
-  --color-accent-light: #FF8F66;
+  /* Accent — aliased to brand teal (old site uses teal only, no orange) */
+  --color-accent: #3EB391;
+  --color-accent-light: #5ECFAD;
+
+  /* Mandarin — used as contrast accent on top of green brand sections */
+  --color-mandarin: #EF8557;
+  --color-mandarin-light: #F29B76;
 
   /* Typography */
   --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -71,14 +76,34 @@
   --section-padding: 5rem;
 }
 
-/* Base styles */
+/* Base styles — matches bloomart.ro: light theme, Oswald headings at 45–55px, mixed case */
 @layer base {
   body {
-    @apply bg-surface text-text font-sans antialiased;
+    @apply bg-white text-text font-sans antialiased;
   }
 
-  h1, h2, h3, h4 {
-    @apply font-display uppercase tracking-wide;
+  h1 {
+    @apply font-display;
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* up to ~55px */
+    line-height: 1.1;
+  }
+  h2 {
+    @apply font-display;
+    font-weight: 600;
+    font-size: clamp(1.75rem, 4vw, 2.8125rem); /* up to ~45px */
+    line-height: 1.15;
+  }
+  h3 {
+    @apply font-display;
+    font-weight: 500;
+    font-size: 1.5625rem; /* ~25px */
+    line-height: 1.2;
+  }
+  h4 {
+    @apply font-display;
+    font-weight: 500;
+    font-size: 1rem;
   }
 }
 
@@ -127,7 +152,7 @@
 }
 
 .animate-fade-up {
-  animation: fade-up 0.7s ease-out both;
+  /* scroll-reveal up-slide disabled per user request */
 }
 .animate-fade-in {
   animation: fade-in 0.6s ease-out both;
@@ -150,11 +175,8 @@
 .delay-500 { animation-delay: 0.5s; }
 .delay-600 { animation-delay: 0.6s; }
 
-/* Scroll-triggered reveal — hidden by default, revealed via IntersectionObserver */
+/* Scroll-triggered reveal — disabled per user request; sections visible immediately */
 [data-reveal] {
-  opacity: 0;
-}
-[data-reveal].revealed {
   opacity: 1;
 }
 
@@ -164,5 +186,5 @@
   100% { transform: translateX(-50%); }
 }
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 40s linear infinite;
 }

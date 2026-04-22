@@ -1,0 +1,378 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+---
+
+<Layout
+  title="Înscriere la cursuri"
+  description="Înscrie-te la cursurile BloomArt Academy — dans copii, dans adulți, dansul mirilor. Completează formularul și te contactăm."
+>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative pt-20 pb-10 lg:pt-24 lg:pb-12 overflow-hidden bg-brand">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-1 bg-mandarin rounded-full"></span>
+        <span class="text-white text-sm font-semibold tracking-wider">Înscriere</span>
+      </div>
+      <h1 class="font-display font-bold text-white leading-[1.05] max-w-4xl text-3xl sm:text-4xl lg:text-5xl">
+        Hai să dansăm împreună
+      </h1>
+      <p class="mt-5 text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed">
+        Completează formularul și te contactăm pentru a stabili programul și a-ți rezerva locul la prima ședință — care este gratuită.
+      </p>
+
+      <!-- Quick action cards -->
+      <div class="grid sm:grid-cols-3 gap-4 mt-12">
+        <a href="tel:+40725975464" class="group flex items-center gap-4 bg-white border border-white rounded-xl px-5 py-4 hover:bg-mandarin hover:border-mandarin transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-text-light text-xs tracking-wide group-hover:text-white/80 transition-colors">Sună-ne</p>
+            <p class="text-text font-semibold group-hover:text-white transition-colors">+40 725 975 464</p>
+          </div>
+        </a>
+        <a href="https://wa.me/40746423423" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 bg-white border border-white rounded-xl px-5 py-4 hover:bg-mandarin hover:border-mandarin transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-text-light text-xs tracking-wide group-hover:text-white/80 transition-colors">WhatsApp</p>
+            <p class="text-text font-semibold group-hover:text-white transition-colors">Scrie-ne acum</p>
+          </div>
+        </a>
+        <a href="mailto:contact@bloomart.ro" class="group flex items-center gap-4 bg-white border border-white rounded-xl px-5 py-4 hover:bg-mandarin hover:border-mandarin transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-text-light text-xs tracking-wide group-hover:text-white/80 transition-colors">Email</p>
+            <p class="text-text font-semibold group-hover:text-white transition-colors">contact@bloomart.ro</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INFO + FORM — split layout ========== -->
+  <section class="bg-surface-alt py-24 lg:py-32 text-text" data-reveal>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-16 lg:gap-8">
+
+        <!-- Left — How it works -->
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-12 h-px bg-brand"></span>
+            <span class="text-brand text-sm font-semibold tracking-wider">Cum te înscrii</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-text leading-tight mb-10">
+            3 pași simpli
+          </h2>
+
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="text-4xl font-display font-bold text-brand shrink-0 leading-none">01</span>
+              <div>
+                <h3 class="text-text font-display font-bold text-lg mb-2">Completează formularul</h3>
+                <p class="text-text-light leading-relaxed">
+                  Alege cursul care te interesează și lasă-ne datele tale de contact. Dacă nu ești sigur ce curs ți se potrivește, alege „Am nevoie de îndrumare".
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <span class="text-4xl font-display font-bold text-brand shrink-0 leading-none">02</span>
+              <div>
+                <h3 class="text-text font-display font-bold text-lg mb-2">Te contactăm</h3>
+                <p class="text-text-light leading-relaxed">
+                  În cel mai scurt timp te sunăm sau îți scriem pe email pentru a stabili programul și a răspunde la întrebări.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <span class="text-4xl font-display font-bold text-brand shrink-0 leading-none">03</span>
+              <div>
+                <h3 class="text-text font-display font-bold text-lg mb-2">Prima ședință e gratuită</h3>
+                <p class="text-text-light leading-relaxed">
+                  Vii la o ședință de probă, fără obligații. Dacă îți place — continuăm împreună.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alt contact -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-text font-display font-bold text-sm mb-4">Alternativ</h3>
+            <p class="text-text-light leading-relaxed mb-4">
+              Te poți înscrie și sunându-ne direct sau trimițându-ne un email.
+            </p>
+            <div class="flex flex-col gap-2">
+              <a href="tel:+40725975464" class="text-brand hover:text-brand-light transition-colors font-semibold">+40 725 975 464</a>
+              <a href="mailto:contact@bloomart.ro" class="text-brand hover:text-brand-light transition-colors font-semibold">contact@bloomart.ro</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right — Enrollment Form -->
+        <div class="lg:col-span-6 lg:col-start-7">
+          <div class="bg-surface-alt rounded-2xl p-8 lg:p-12 border border-gray-200">
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-text mb-2">Formular de înscriere</h2>
+            <p class="text-text-light mb-8">Completează datele și te contactăm în cel mai scurt timp.</p>
+
+            <form class="space-y-6" id="inscriere-form">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-text tracking-wide mb-2">Numele tău <span class="text-brand">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300"
+                  placeholder="Numele tău complet"
+                />
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-text tracking-wide mb-2">Email <span class="text-brand">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300"
+                    placeholder="email@exemplu.ro"
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-semibold text-text tracking-wide mb-2">Telefon <span class="text-brand">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300"
+                    placeholder="07xx xxx xxx"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="course" class="block text-sm font-semibold text-text tracking-wide mb-2">Alege cursul <span class="text-brand">*</span></label>
+                <select
+                  id="course"
+                  name="course"
+                  required
+                  class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300 appearance-none"
+                >
+                  <option value="">Selectează un curs</option>
+                  <optgroup label="Copii">
+                    <option value="copii-dans-modern">Copii — Dans Modern</option>
+                    <option value="copii-street-dance">Copii — Street Dance</option>
+                    <option value="copii-baby-dance">Copii — Baby Dance (3–5 ani)</option>
+                  </optgroup>
+                  <optgroup label="Adulți">
+                    <option value="adulti-dans-societate">Adulți — Dans de Societate</option>
+                    <option value="adulti-street-dance">Adulți — Street Dance</option>
+                  </optgroup>
+                  <optgroup label="Cupluri">
+                    <option value="dansul-mirilor">Dansul Mirilor</option>
+                  </optgroup>
+                  <option value="indrumare">Am nevoie de îndrumare</option>
+                </select>
+              </div>
+
+              <!-- Child fields — only shown for kids courses -->
+              <div id="child-fields" class="hidden grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="childName" class="block text-sm font-semibold text-text tracking-wide mb-2">Nume copil</label>
+                  <input
+                    type="text"
+                    id="childName"
+                    name="childName"
+                    class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300"
+                    placeholder="Numele copilului"
+                  />
+                </div>
+                <div>
+                  <label for="childAge" class="block text-sm font-semibold text-text tracking-wide mb-2">Vârstă copil</label>
+                  <input
+                    type="number"
+                    id="childAge"
+                    name="childAge"
+                    min="3"
+                    max="17"
+                    class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300"
+                    placeholder="Ex: 7"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-text tracking-wide mb-2">Mesaj (opțional)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full bg-surface-warm border border-gray-200 rounded-xl px-4 py-3.5 text-text placeholder-text-light/60 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-colors duration-300 resize-none"
+                  placeholder="Întrebări, preferințe de program, sau orice altceva vrei să ne spui..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-accent hover:bg-accent-light text-text font-bold tracking-wide text-sm py-4 rounded-full transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(62,179,145,0.3)]"
+              >
+                Trimite înscrierea
+              </button>
+
+              <p class="text-xs text-text-light text-center">
+                Prin trimiterea formularului ești de acord să te contactăm pentru a finaliza înscrierea.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="relative py-24 lg:py-32 overflow-hidden" data-reveal>
+    <img
+      src="/images/homepage/couples-dancing.webp"
+      alt="Dans BloomArt"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand to-brand-dark"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <span class="text-mandarin text-sm font-semibold tracking-wider mb-6 block">Ai întrebări?</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.05] mb-8">
+        Scrie-ne pe WhatsApp
+      </h2>
+      <p class="text-xl text-text-light mb-12 max-w-xl mx-auto">
+        Răspundem rapid la orice întrebare despre cursuri, program sau tarife.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <CTAButton href="https://wa.me/40746423423" label="WhatsApp" variant="mandarin" size="lg" />
+        <CTAButton href="/contact/" label="Pagina de Contact" variant="outline" size="lg" />
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // Scroll-reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed', 'animate-fade-up');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => obs.observe(el));
+
+  // Show/hide child fields based on course selection
+  const courseSelect = document.getElementById('course') as HTMLSelectElement;
+  const childFields = document.getElementById('child-fields');
+  const childName = document.getElementById('childName') as HTMLInputElement;
+  const childAge = document.getElementById('childAge') as HTMLInputElement;
+
+  const updateChildFields = () => {
+    const isKidsCourse = courseSelect?.value?.startsWith('copii-');
+    if (isKidsCourse) {
+      childFields?.classList.remove('hidden');
+      childFields?.classList.add('grid');
+      if (childName) childName.required = true;
+      if (childAge) childAge.required = true;
+    } else {
+      childFields?.classList.add('hidden');
+      childFields?.classList.remove('grid');
+      if (childName) childName.required = false;
+      if (childAge) childAge.required = false;
+    }
+  };
+
+  courseSelect?.addEventListener('change', updateChildFields);
+  updateChildFields();
+
+  // Prefill course from ?course= query param
+  const params = new URLSearchParams(window.location.search);
+  const preselect = params.get('course');
+  if (preselect && courseSelect) {
+    const match = [...courseSelect.options].find(o => o.value === preselect);
+    if (match) {
+      courseSelect.value = preselect;
+      updateChildFields();
+    }
+  }
+
+  // Form submission
+  const form = document.getElementById('inscriere-form') as HTMLFormElement;
+  const submitBtn = form?.querySelector('button[type="submit"]') as HTMLButtonElement;
+  const originalText = submitBtn?.textContent || '';
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Se trimite...';
+
+    const data = {
+      name: (form.querySelector('#name') as HTMLInputElement).value,
+      email: (form.querySelector('#email') as HTMLInputElement).value,
+      phone: (form.querySelector('#phone') as HTMLInputElement).value,
+      course: (form.querySelector('#course') as HTMLSelectElement).value,
+      childName: (form.querySelector('#childName') as HTMLInputElement).value,
+      childAge: (form.querySelector('#childAge') as HTMLInputElement).value,
+      message: (form.querySelector('#message') as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch('/api/inscriere', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        submitBtn.textContent = 'Înscriere trimisă!';
+        submitBtn.classList.remove('bg-accent', 'hover:bg-accent-light');
+        submitBtn.classList.add('bg-green-600');
+        form.reset();
+        updateChildFields();
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.classList.remove('bg-green-600');
+          submitBtn.classList.add('bg-accent', 'hover:bg-accent-light');
+          submitBtn.disabled = false;
+        }, 4000);
+      } else {
+        const err = await res.json();
+        throw new Error(err.message || 'Eroare la trimitere');
+      }
+    } catch (error: any) {
+      submitBtn.textContent = 'Eroare — încearcă din nou';
+      submitBtn.classList.remove('bg-accent', 'hover:bg-accent-light');
+      submitBtn.classList.add('bg-red-600');
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.classList.remove('bg-red-600');
+        submitBtn.classList.add('bg-accent', 'hover:bg-accent-light');
+        submitBtn.disabled = false;
+      }, 3000);
+    }
+  });
+</script>

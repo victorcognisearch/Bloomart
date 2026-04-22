@@ -14,44 +14,37 @@ const allImages = galleryCategories.flatMap((cat) =>
 >
 
   <!-- ========== HERO ========== -->
-  <section class="relative min-h-[60vh] lg:min-h-[70vh] flex items-end pb-20 lg:pb-28 overflow-hidden bg-dark">
-    <img
-      src="/images/grupa-adulti/grupa-adulti-1-1.webp"
-      alt="Galerie BloomArt Academy"
-      class="absolute inset-0 w-full h-full object-cover opacity-30"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/40"></div>
-
+  <section class="relative pt-20 pb-10 lg:pt-24 lg:pb-12 overflow-hidden bg-brand">
     <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
       <div class="flex items-center gap-3 mb-6">
-        <span class="w-12 h-px bg-brand-light"></span>
-        <span class="text-brand-light text-sm font-semibold uppercase tracking-[0.2em]">Galerie</span>
+        <span class="w-12 h-1 bg-mandarin rounded-full"></span>
+        <span class="text-white text-sm font-semibold tracking-wider">Galerie</span>
       </div>
-      <h1 class="text-[clamp(2.5rem,6vw,5.5rem)] font-display font-bold text-white leading-[0.95] max-w-4xl">
+      <h1 class="font-display font-bold text-white leading-[1.05] max-w-4xl text-3xl sm:text-4xl lg:text-5xl">
         Momente din lumea BloomArt
       </h1>
-      <p class="mt-8 text-lg lg:text-xl text-white/60 max-w-xl leading-relaxed">
+      <p class="mt-8 text-lg lg:text-xl text-white/90 max-w-xl leading-relaxed">
         Fiecare fotografie surprinde energia, pasiunea și bucuria pe care le trăim în fiecare lecție de dans.
       </p>
     </div>
   </section>
 
   <!-- ========== FILTER + GALLERY GRID ========== -->
-  <section class="bg-[#0a0a0f] py-24 lg:py-32" data-reveal>
+  <section class="bg-surface-alt py-24 lg:py-32 text-text" data-reveal>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
       <!-- Filter Tabs -->
       <div class="flex flex-wrap gap-3 mb-16">
         <button
           data-filter="all"
-          class="filter-btn active px-6 py-2.5 rounded-full font-display text-sm uppercase tracking-wider font-semibold transition-colors bg-brand text-white"
+          class="filter-btn active px-6 py-2.5 rounded-full font-display text-sm tracking-wide font-semibold transition-colors bg-brand text-text"
         >
           Toate
         </button>
         {galleryCategories.map((cat) => (
           <button
             data-filter={cat.id}
-            class="filter-btn px-6 py-2.5 rounded-full font-display text-sm uppercase tracking-wider font-semibold transition-colors border border-white/20 text-white/60 hover:border-brand/50 hover:text-white"
+            class="filter-btn px-6 py-2.5 rounded-full font-display text-sm tracking-wide font-semibold transition-colors border border-gray-300 text-text hover:border-brand/50 hover:text-text"
           >
             {cat.label}
           </button>
@@ -73,7 +66,7 @@ const allImages = galleryCategories.flatMap((cat) =>
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div class="absolute inset-0 bg-dark/0 group-hover:bg-dark/30 transition-colors duration-300 flex items-center justify-center">
-              <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <svg class="w-8 h-8 text-text opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
               </svg>
             </div>
@@ -89,13 +82,13 @@ const allImages = galleryCategories.flatMap((cat) =>
     <div class="absolute inset-0 bg-dark/95 backdrop-blur-sm" id="lightbox-backdrop"></div>
     <div class="relative flex items-center justify-center w-full h-full p-4 sm:p-8">
       <!-- Close -->
-      <button id="lightbox-close" class="absolute top-4 right-4 sm:top-6 sm:right-6 z-10 w-10 h-10 flex items-center justify-center text-white/60 hover:text-white transition-colors">
+      <button id="lightbox-close" class="absolute top-4 right-4 sm:top-6 sm:right-6 z-10 w-10 h-10 flex items-center justify-center text-text hover:text-white transition-colors">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
       <!-- Prev -->
-      <button id="lightbox-prev" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-white/40 hover:text-white transition-colors">
+      <button id="lightbox-prev" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-text-light hover:text-white transition-colors">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
@@ -103,13 +96,13 @@ const allImages = galleryCategories.flatMap((cat) =>
       <!-- Image -->
       <img id="lightbox-img" src="" alt="" class="relative z-10 max-w-full max-h-[85vh] object-contain rounded-lg" />
       <!-- Next -->
-      <button id="lightbox-next" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-white/40 hover:text-white transition-colors">
+      <button id="lightbox-next" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-text-light hover:text-white transition-colors">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
       </button>
       <!-- Counter -->
-      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-white/50 text-sm font-display tracking-wider">
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-text-light text-sm font-display tracking-wider">
         <span id="lightbox-counter"></span>
       </div>
     </div>
@@ -122,18 +115,18 @@ const allImages = galleryCategories.flatMap((cat) =>
       alt="Dans BloomArt"
       class="absolute inset-0 w-full h-full object-cover opacity-20"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand to-brand-dark"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <span class="text-brand text-sm font-semibold uppercase tracking-[0.2em] mb-6 block">Începe acum</span>
-      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[0.95] mb-8">
+      <span class="text-mandarin text-sm font-semibold tracking-wider mb-6 block">Începe acum</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.05] mb-8">
         Vrei să faci parte din povestea noastră?
       </h2>
-      <p class="text-xl text-white/40 mb-12 max-w-xl mx-auto">
+      <p class="text-xl text-text-light mb-12 max-w-xl mx-auto">
         Prima ședință este gratuită. Înscrie-te și descoperă bucuria dansului.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <CTAButton href="/formular-inscriere/" label="Înscrie-te Acum" variant="primary" size="lg" />
+        <CTAButton href="/formular-inscriere/" label="Înscrie-te Acum" variant="mandarin" size="lg" />
         <CTAButton href="/contact/" label="Contactează-ne" variant="outline" size="lg" />
       </div>
     </div>
@@ -168,7 +161,7 @@ const allImages = galleryCategories.flatMap((cat) =>
   const galleryItems = document.querySelectorAll<HTMLElement>('.gallery-item');
 
   const activeClasses = ['bg-brand', 'text-white'];
-  const inactiveClasses = ['border', 'border-white/20', 'text-white/60', 'hover:border-brand/50', 'hover:text-white'];
+  const inactiveClasses = ['border', 'border-gray-300', 'text-text', 'hover:border-brand/50', 'hover:text-white'];
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {

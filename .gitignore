@@ -27,3 +27,6 @@ pnpm-debug.log*
 .claude/
 .vercel/
 .vscode/
+
+# reference material scraped from old bloomart.ro — must not be served publicly
+public/_oldsite/

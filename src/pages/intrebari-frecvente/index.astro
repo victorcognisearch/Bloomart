@@ -1,0 +1,255 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTAButton from '../../components/CTAButton.astro';
+
+type QA = { q: string; a: string };
+type Section = { title: string; id: string; items: QA[] };
+
+const sections: Section[] = [
+  {
+    title: 'Întrebări generale cursuri de dans',
+    id: 'general',
+    items: [
+      {
+        q: 'Unde pot vedea orarul cursurilor?',
+        a: 'Orarul tuturor cursurilor poate fi verificat pe <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina Orar</a>.',
+      },
+      {
+        q: 'Care este prețul cursurilor de dans?',
+        a: 'Prețul cursurilor noastre poate fi vizualizat în <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de tarife</a>.',
+      },
+      {
+        q: 'Programul nu îmi permite să ajung la toate sesiunile de curs. Ce soluții am?',
+        a: 'În funcție de programul tău sau al copilului tău, poți alege dintre un abonament de 4 sau 8 ședințe pe lună și ore particulare de dans cu unul dintre antrenorii noștri, cu care poți stabili un program adecvat orarului tău.',
+      },
+      {
+        q: 'Ce trebuie să am pentru a ne putea înscrie la cursurile de dans BloomArt?',
+        a: 'Te poți alătura cursurilor de dans BloomArt indiferent de nivelul tău! Majoritatea cursurilor noastre sunt cursuri de inițiere sau de nivel mediu.<br/><br/>Dacă practici dans sportiv de performanță și ești în căutarea unui nou club de dans, ești la locul potrivit! Antrenorii BloomArt Academy antrenează și grupe de performanță copii și adulți. <a href="/contact/" class="text-brand hover:text-brand-light underline underline-offset-2">Contactează-ne</a> pentru a discuta pe larg posibilitatea de înscriere la o grupă de performanță de dans sportiv.<br/><br/>Din păcate, BloomArt Academy nu oferă momentan o grupă de performanță pentru street dance și dans modern.',
+      },
+      {
+        q: 'Pot lua doar lecții individuale fără a ajunge la cursuri?',
+        a: 'Desigur! Poți oricând discuta cu antrenorii noștri pentru a programa lecții individuale de dans, fie că nu ai timp să ajungi la lecțiile de grup, ai trac, sau îți dorești să progresezi mai susținut decât ai putea la lecțiile de grup. Prețul lecțiilor individuale de dans este afișat pe <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de tarife</a>.',
+      },
+      {
+        q: 'În cât timp pot să folosesc ședințele din abonament?',
+        a: 'Toate abonamentele noastre sunt lunare, iar ședințele nu se reportează de la o lună la alta. Spre exemplu, dacă ați achiziționat un abonament de 8 ședințe la 1 aprilie, puteți folosi cele 8 ședințe doar în cadrul lunii aprilie.',
+      },
+      {
+        q: 'Doresc să cumpăr un abonament de la jumătatea lunii. Când încep cursul și cât plătesc?',
+        a: 'În cazul în care ați decis să vă alăturați unui curs de dans BloomArt de la jumătatea lunii calendaristice, prima lună veți plăti o cotă parte din abonament corespunzătoare numărului de ședințe rămase în lună, urmând ca de luna următoare să plătiți abonamentul întreg.',
+      },
+    ],
+  },
+  {
+    title: 'Lecții individuale de dans',
+    id: 'lectii-individuale',
+    items: [
+      {
+        q: 'Care este prețul lecțiilor private de dans?',
+        a: 'Lecțiile individuale de dans pot fi achiziționate separat sau în pachete, iar prețul poate fi vizualizat în <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de tarife</a>.',
+      },
+      {
+        q: 'Care este perioada de timp în care pot efectua ședințele din pachetul achiziționat?',
+        a: 'În cazul în care ai achiziționat un pachet de dansul mirilor sau un pachet de lecții private de dans, toate lecțiile din pachet trebuiesc efectuate în cadrul următoarelor perioade de timp:<ul class="mt-3 space-y-1 list-disc list-inside"><li>pachete de 5 lecții — se vor efectua pe parcursul a 5 săptămâni</li><li>pachete de 7 lecții — se vor efectua pe parcursul a 6 săptămâni</li><li>pachete de 10 lecții — se vor efectua pe parcursul a 7 săptămâni</li></ul><br/>În cazul în care una dintre lecții este amânată de antrenor din motive personale sau de sănătate, durata perioadei în care se pot efectua lecțiile crește corespunzător cu durata amânării.',
+      },
+    ],
+  },
+  {
+    title: 'Cursuri copii',
+    id: 'cursuri-copii',
+    items: [
+      {
+        q: 'Care este vârsta minimă la care copilul meu poate începe cursuri de dans?',
+        a: 'În general, îți recomandăm să înscrii copilul la cursuri de dans în jurul vârstei de 4–5 ani, întrucât la acea vârstă va dezvolta echilibrul, memoria și capacitatea de concentrare la un nivel adecvat pentru a învăța tehnica de dans și pentru a-și aminti figuri și coregrafii complexe.<br/><br/>Fiecare copil este unic, așa că dacă cel(cea) mic(ă) are un interes deosebit față de dans și este precoce în dezvoltarea aptitudinilor de mai sus, <a href="/contact/" class="text-brand hover:text-brand-light underline underline-offset-2">contactează-ne</a> și vom discuta posibilitatea înscrierii la cursuri de la o vârstă mai fragedă.',
+      },
+      {
+        q: 'Ce cursuri de dans pentru copii oferă BloomArt Academy?',
+        a: 'Oferta actuală poate fi vizualizată pe <a href="/cursuri-dans-copii/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de cursuri copii</a>.',
+      },
+      {
+        q: 'Care este orarul cursurilor pentru copii?',
+        a: 'Te rugăm să consulți programul pe <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de orar</a>.',
+      },
+      {
+        q: 'Există un spațiu unde pot aștepta în timpul orelor de dans ale copilului meu?',
+        a: 'Sigur că da! Locația noastră include o anticameră cu scaune și banchete, precum și un balcon spațios, pe care le poți folosi pentru a aștepta până la finalul cursului. Suntem în curs de amenajare a unei mici zone de recepție unde vor fi disponibile apă, băuturi răcoritoare și cafea. În plus, la parterul clădirii există automate de cafea și de snacks.',
+      },
+    ],
+  },
+  {
+    title: 'Cursuri adulți',
+    id: 'cursuri-adulti',
+    items: [
+      {
+        q: 'Care sunt stilurile de dans pe care le voi învăța la cursurile de dans de societate pentru adulți?',
+        a: 'La cursurile de dans de societate pentru adulți vei învăța dansuri de origine Latino Americană (salsa, merengue, bachata, samba, cha-cha-cha, rumba), Nord Americană (jive, West Coast swing) sau Europeană (vals, vals vienez, quick-step, foxtrot). De asemenea, ne place să variem dansurile pe care le predăm, așa că nu este exclus să te trezești cu dansuri surpriză la grup!',
+      },
+      {
+        q: 'Care este programul cursurilor pentru adulți?',
+        a: 'Te rugăm să consulți programul pe <a href="/orar-tarife/" class="text-brand hover:text-brand-light underline underline-offset-2">pagina de orar</a>.',
+      },
+      {
+        q: 'Unde se țin cursurile de dans pentru adulți?',
+        a: 'La sediul BloomArt Academy din Strada Tăbăcarilor 14, etaj 2, Sector 4, București.',
+      },
+      {
+        q: 'Nu am nicio experiență în dans. Pot veni la cursuri?',
+        a: 'Desigur! Organizăm și grupe de dans de societate pentru adulți concepute special pentru un nivel începător.',
+      },
+    ],
+  },
+  {
+    title: 'Dansul Mirilor',
+    id: 'dansul-mirilor',
+    items: [
+      {
+        q: 'De câte sesiuni ai nevoie pentru a învăța dansul mirilor?',
+        a: 'Pe scurt, depinde! Numărul de sesiuni de care vei avea nevoie este proporțional cu dificultatea coregrafiei, stilul de dans ales, sau cât de repede înveți și cât de perfecționist(ă) ești.<br/><br/>Din experiența noastră, majoritatea celor care lucrează cu echipa BloomArt învață o coregrafie de dificultate medie pe care o pot dansa cu ușurință pe muzică în 5–10 ședințe. Acesta este de altfel și motivul pentru care pachetele noastre pentru dansul mirilor conțin 5, 7, respectiv 10 ședințe.<br/><br/>În cazul în care îți dorești să combini multiple coregrafii, stiluri muzicale, să dansezi pentru 5+ minute, sau să incluzi în coregrafia ta figuri spectaculoase, probabil că vei avea nevoie de mai mult de 10 ședințe pentru a pune la punct dansul pentru nunta ta.<br/><br/>La BloomArt Academy îți oferim și posibilitatea să rezervi ședințe individuale în plus față de cele incluse în pachetele standard, pentru a te ajuta să obții rezultatul dorit. De asemenea, dacă știi deja că vei avea nevoie de un număr considerabil mai mare de ore decât cel inclus în pachetele noastre standard, <a href="/contact/" class="text-brand hover:text-brand-light underline underline-offset-2">contactează-ne</a> și putem stabili un program și un tarif personalizat.',
+      },
+      {
+        q: 'Cu cât timp înaintea nunții trebuie să începi pregătirea dansului mirilor?',
+        a: 'Depinde de cât timp aveți la dispoziție pe săptămână și cât vă doriți să vă antrenați acasă.<br/><br/>În general, cu cât aveți mai mult timp la dispoziție pentru antrenamente, și cu cât sunteți mai disponibili pentru a antrena coregrafia acasă, cu atât puteți întârzia începerea cursurilor pentru dansul mirilor.<br/><br/>Dacă, dimpotrivă, sunteți extrem de ocupați și știți sigur că nu aveți mai mult de 2–3 ore pe săptămână pentru antrenament, atunci trebuie să vă alocați mai mult timp învățării dansului.<br/><br/>Pentru a fi siguri că dansul vă reprezintă, vă pune în evidență și este pus la punct până la ultimul detaliu, vă recomandăm ca în general să începeți sesiunile pentru dansul mirilor cu minim 2 luni înaintea nunții.',
+      },
+      {
+        q: 'Nunta mea este foarte curând și m-am hotărât tocmai acum că vreau să fac dansul mirilor. Ce opțiuni am?',
+        a: 'În primul rând, nu te impacienta!<br/><br/>Suntem conștienți că nunta este unul dintre cele mai importante momente din viața ta și că, în mod natural, îți dorești ca totul să iasă perfect.<br/><br/>Cu toate că nu îți recomandăm să înveți dansul mirilor cu o săptămână sau câteva zile înainte de nuntă, echipa noastră are experiența pentru a vă ajuta să străluciți pe ringul de dans chiar și în situația în care aveți la dispoziție doar câteva zile până la marele eveniment.<br/><br/>În acest context, însă, te poți aștepta la sesiuni de antrenament mai dese și mai intense și la faptul că va trebui să investești atenție și timp în acele câteva zile pentru a învăța coregrafia. De asemenea, este posibil ca timpul limitat să ne limiteze alegerile în ceea ce privește complexitatea și durata coregrafiei. <a href="/contact/" class="text-brand hover:text-brand-light underline underline-offset-2">Contactează-ne</a> pentru a putea discuta planurile tale în detaliu.',
+      },
+      {
+        q: 'Care este perioada de timp în care pot efectua ședințele din pachetul achiziționat?',
+        a: 'În cazul în care ai achiziționat un pachet de dansul mirilor sau un pachet de lecții private de dans, toate lecțiile din pachet trebuiesc efectuate în cadrul următoarelor perioade de timp:<ul class="mt-3 space-y-1 list-disc list-inside"><li>pachete de 5 lecții — se vor efectua pe parcursul a 5 săptămâni</li><li>pachete de 7 lecții — se vor efectua pe parcursul a 6 săptămâni</li><li>pachete de 10 lecții — se vor efectua pe parcursul a 7 săptămâni</li></ul><br/>În cazul în care una dintre lecții este amânată de antrenor din motive personale sau de sănătate, durata perioadei în care se pot efectua lecțiile crește corespunzător cu durata amânării.',
+      },
+    ],
+  },
+];
+---
+
+<Layout
+  title="Întrebări Frecvente"
+  description="Răspunsuri la cele mai frecvente întrebări despre cursurile BloomArt Academy — orar, tarife, înscriere, cursuri copii, adulți și dansul mirilor."
+>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative pt-20 pb-10 lg:pt-24 lg:pb-12 overflow-hidden bg-brand">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-12 h-1 bg-mandarin rounded-full"></span>
+        <span class="text-white text-sm font-semibold tracking-wider">Întrebări Frecvente</span>
+      </div>
+      <h1 class="font-display font-bold text-white leading-[1.05] max-w-4xl text-3xl sm:text-4xl lg:text-5xl">
+        Ai o întrebare? Avem un răspuns
+      </h1>
+      <p class="mt-5 text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed">
+        Răspundem la cele mai frecvente întrebări despre cursurile BloomArt — orar, tarife, înscriere, nivel, pachete și dansul mirilor.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== QUICK NAV ========== -->
+  <section class="bg-surface-alt border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+      <div class="flex flex-wrap gap-2 lg:gap-3">
+        {sections.map((sec) => (
+          <a
+            href={`#${sec.id}`}
+            class="inline-flex items-center px-4 py-2 text-xs lg:text-sm font-display font-medium text-text border border-gray-200 rounded-full bg-white hover:border-brand hover:text-brand transition-colors"
+          >
+            {sec.title}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ SECTIONS ========== -->
+  <section class="bg-white py-24 lg:py-32 text-text">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      {sections.map((sec) => (
+        <div id={sec.id} class="mb-16 lg:mb-20 scroll-mt-24" data-reveal>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-12 h-px bg-brand"></span>
+            <span class="text-brand text-sm font-semibold tracking-wider">Secțiune</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-text leading-tight mb-10">
+            {sec.title}
+          </h2>
+
+          <div class="space-y-4">
+            {sec.items.map((qa) => (
+              <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white">
+                <button type="button" class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left hover:bg-surface-alt transition-colors">
+                  <span class="text-text font-display font-semibold text-lg pr-4">{qa.q}</span>
+                  <svg class="faq-icon w-5 h-5 text-brand shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div class="faq-content hidden px-6 pb-6 pt-1">
+                  <div class="text-text-light leading-relaxed" set:html={qa.a}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="relative py-24 lg:py-32 overflow-hidden" data-reveal>
+    <img
+      src="/images/homepage/couples-dancing.webp"
+      alt="Dans BloomArt"
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-brand to-brand-dark"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <span class="text-mandarin text-sm font-semibold tracking-wider mb-6 block">Nu ai găsit răspunsul?</span>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.05] mb-8">
+        Scrie-ne direct
+      </h2>
+      <p class="text-xl text-text-light mb-12 max-w-xl mx-auto">
+        Răspundem rapid pe WhatsApp, email sau telefon — orice întrebare, orice nelămurire.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <CTAButton href="/contact/" label="Contact" variant="mandarin" size="lg" />
+        <CTAButton href="https://wa.me/40746423423" label="WhatsApp" variant="secondary" size="lg" />
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // FAQ Accordion — only one open at a time per section
+  document.querySelectorAll('.faq-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const content = item?.querySelector('.faq-content');
+      const icon = item?.querySelector('.faq-icon');
+      const isOpen = !content?.classList.contains('hidden');
+
+      // Close all in page
+      document.querySelectorAll('.faq-item').forEach((faq) => {
+        faq.querySelector('.faq-content')?.classList.add('hidden');
+        faq.querySelector('.faq-icon')?.classList.remove('rotate-180');
+      });
+
+      if (!isOpen) {
+        content?.classList.remove('hidden');
+        icon?.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Scroll-reveal
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed', 'animate-fade-up');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  revealEls.forEach((el) => obs.observe(el));
+</script>
